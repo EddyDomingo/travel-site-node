@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs')%>
+<body>
+    <%- include('./partials/nav.ejs')%>
+    <main class="signUp-main">
+        <div class="form-card">
+            <img src="images/send.png" alt="send">
+            <h2>User Login Form</h2>
+            <br>
+            <form action="/login-users" method="post">
+                <label for='name'>User Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for='password'>Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button class="btn btn-lightOrange btn-submit">Login</button>
+            </form>
+        </div>
+ 
+        
+        
+    </main>
+    
+</body>
+</html>

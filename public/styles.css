@@ -1,0 +1,382 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: url("images/Decore.png") no-repeat;
+  background-position: top right;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 2rem;
+  max-width: 1300px;
+}
+
+h1,
+h2 {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+}
+
+/* nav bar styles */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: solid blue 1px;
+  padding: 1.5rem 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.navbar-list li {
+  margin: 0 2rem;
+  transition: 250ms;
+}
+
+.login-list li {
+  margin: 0 0.8rem;
+}
+
+/* .navbar-list li:hover,
+.navbar-list li:focus,
+.login-list li:hover,
+.login-list li:focus {
+  color: #f1a501;
+  font-weight: 600;
+} */
+
+li a {
+  text-decoration: none;
+  color: black;
+  transition: 250ms;
+  font-size: 1.2rem;
+}
+
+li a:hover,
+li a:focus {
+  color: #f1a501;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.login-list li a:hover,
+.login-list li a:focus {
+  /* color: white; */
+  /* background: #f1a501;*/
+  border: solid #f1a501 1px;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  background-color: #f1a501;
+}
+
+/* index page styles */
+.index-main {
+  /* border: solid green 1px; */
+  display: flex;
+  flex-direction: row;
+  padding: 3rem 0;
+}
+
+.heroTextContainer-index,
+.heroImageContainer-index {
+  /* border: solid magenta 1px; */
+  width: 50%;
+}
+
+.preTitle {
+  color: #df6951;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: 1.25rem;
+  margin: 1rem 0 1rem 0;
+}
+
+h1 {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1.1;
+  margin: 0 0 2rem 0;
+}
+
+.hero-subText {
+  margin: 0 0 4rem 0;
+  padding: 0 4rem 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: 250ms;
+}
+
+.btn:hover,
+.btn:focus {
+  color: black;
+}
+
+.btn-lightOrange {
+  background-color: #f1a501;
+  color: white;
+}
+
+.btn-darkOrange {
+  background-color: #df6951;
+  color: white;
+}
+
+.heroImageContainer-index {
+  position: relative;
+}
+
+.traveller-image {
+  right: 1rem;
+  position: absolute;
+}
+
+.underline-image {
+  position: absolute;
+  top: 32%;
+  right: 50%;
+  z-index: -1;
+}
+
+/* category page */
+
+.category-main,
+.destination-main,
+.signUp-main {
+  padding: 3rem 0;
+  height: 80vh;
+}
+
+h2 {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.miniCard-container,
+.cityCard-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mini-card {
+  padding: 1rem 2rem;
+}
+
+.mini-card,
+.city-card {
+  border-radius: 0.8rem;
+  text-align: center;
+  border: solid #f1a501 1px;
+  box-shadow: -3px 8px 23px -3px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: -3px 8px 23px -3px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: -3px 8px 23px -3px rgba(0, 0, 0, 0.51);
+  margin: 1rem;
+}
+
+.miniCard-subtitle {
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.miniCard-text {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.plane-img {
+  width: 55%;
+}
+
+.city-card {
+  width: 25%;
+  height: 400px;
+  padding-top: 21.5rem;
+  transition: 250ms;
+}
+
+.city-card:hover,
+.city-card:focus {
+  transform: translateY(-5px);
+  border: solid #f1b532 3px;
+  /* background-color: #f1a501; */
+  box-shadow: -3px 28px 75px -2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -3px 28px 75px -2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -3px 28px 75px -2px rgba(0, 0, 0, 0.5);
+}
+
+.cityCard-container {
+  color: black;
+}
+
+.rome-card {
+  background: url("images/rome.png") no-repeat;
+  background-position: center;
+  background-size: fit;
+}
+
+.london-card {
+  background: url("images/london.jpg") no-repeat;
+  background-position: center;
+  background-size: fit;
+}
+
+.europe-card {
+  background: url("images/europe.png") no-repeat;
+  background-position: center;
+  background-size: fit;
+}
+
+/* destination page */
+.bookTrip-container,
+.testimonial-container {
+  display: flex;
+}
+
+.bookTrip-container {
+  margin-bottom: 4rem;
+}
+
+.destination-main h2 {
+  text-align: left;
+  padding: 0 3rem 0 0;
+}
+
+.bookTrip-text,
+.trip-card,
+.testimonialText-container,
+.testimonialCard-container {
+  width: 50%;
+}
+
+.trip-card,
+.testimonialCard-container {
+  padding: 0 5rem;
+}
+
+.dest-text {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.8rem;
+}
+
+.dest-text div {
+  padding: 0 2rem;
+}
+
+.bookTrip-text h2::before {
+  content: "Easy and Fast";
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.testimonialText-container h2::before {
+  content: "testimonial";
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* sign up form */
+
+.form-card {
+  position: relative;
+  width: 40%;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: -3px 28px 75px -2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -3px 28px 75px -2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -3px 28px 75px -2px rgba(0, 0, 0, 0.5);
+}
+
+label,
+input {
+  display: block;
+}
+
+input {
+  margin: 0 0 1rem 0;
+  width: 90%;
+  padding: 0.5rem 1rem;
+  /* border-radius: 0.5rem; */
+  background: #f5f4f3;
+  outline: none;
+  border: none;
+  border-bottom: rgba(0, 0, 0, 0.51) 1px solid;
+  appearance: none;
+}
+
+.form-card img {
+  margin: 0 0 0 10rem;
+}
+
+.btn-submit {
+  margin-top: 1.2rem;
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  padding: 0.8rem 9.5rem;
+  box-shadow: 2px 6px 11px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 6px 11px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 6px 11px 3px rgba(0, 0, 0, 0.75);
+}
+
+/* footer styles */
+
+footer {
+  /* border: solid black 1px; */
+  /* background-color: #dfd7f9; */
+  width: 100%;
+  padding: 2rem 1rem;
+  background-image: url("images/footer/spiral.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+}
+
+footer h4 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.125rem;
+  color: #5e6282;
+  margin: 0 auto 1rem auto;
+  width: 50%;
+}
+
+footer input {
+  width: 20%;
+  margin: 0 0 0 30%;
+}
