@@ -8,7 +8,7 @@ const bcrypt = require('bcrypt');
 const app = express();
 
 //3. connect to mongodb
-const dbURI = 'mongodb+srv://eddylegend811:test123456789@cluster0.sfky3.mongodb.net/node-tuts?retryWrites=true&w=majority';
+const dbURI = SECRET
 mongoose.connect(dbURI)
 .then((result) => app.listen(3000))
 .catch((err) => console.log(err))
